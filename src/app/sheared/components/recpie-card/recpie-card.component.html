@@ -1,0 +1,16 @@
+<div class="card dark:!bg-gray-600">
+    <img src="{{recpie.strMealThumb}}" alt="{{recpie.strArea}}">
+
+    
+    @if (recpie.strArea != undefined) {
+        <h3 >{{recpie.strMeal}}</h3>
+        <p class="dark:font-bold dark:!text-gray-300"><i class="fas fa-earth pr-2"></i>{{recpie.strArea}}</p>
+    }
+    @else {
+        <h3>{{recpie.strMeal.split(' ').splice(0 , 2).join(' ')}}</h3>
+        
+    }
+    
+    <a [routerLink]="['/recpie',recpie.idMeal]" class="dark:!bg-green-900">View Recpie</a>
+
+</div>

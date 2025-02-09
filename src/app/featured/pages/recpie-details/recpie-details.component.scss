@@ -1,0 +1,97 @@
+$rounded: 1rem;
+$min-spacing: 1rem;
+
+.details-continer {
+    padding: 0 $min-spacing;
+    overflow: auto;
+    
+    .header {
+        margin-bottom: $min-spacing;
+
+        h1 {
+            font-family: Pacifico, cursive;
+            font-size: 48px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        figure {
+            margin-top: $min-spacing;
+            width: 100%;
+            border-radius: $rounded;
+            text-align: center;
+
+            img {
+                border-radius: $rounded;
+                width: 100%;
+                margin-bottom: $min-spacing;
+            }
+
+            a {
+                text-align: center;
+                padding: 0.5rem $min-spacing;
+                color: white;
+                border-radius: 0.5rem;
+
+
+            }
+
+            .red {
+                background-color: #dc2626;
+                margin-right: 16px;
+            }
+
+            .green {
+                background-color: #21ba75;
+            }
+        }
+    }
+
+    .description {
+        margin: $min-spacing 0;
+    }
+
+    .recipes {
+        border-radius: $rounded;
+        padding: $min-spacing ;
+        background-color: #fff;
+        margin: $min-spacing 1rem;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            border-bottom: 4px solid #e5e7eb;
+            padding: 0.5rem;
+            margin-bottom: $min-spacing;
+        }
+
+        .ingredient {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 2px solid #e5e7eb;
+            padding: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .details-continer {
+        display: flex;
+        gap: $min-spacing;
+        .header {
+           width: 33%;
+        }
+
+        .description {
+            margin-top: 5rem;
+           width: 33%;
+        }
+
+        .recipes {
+            width: 33%;
+            height: fit-content;
+            margin-top: 2rem;
+        }
+    }
+}

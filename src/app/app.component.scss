@@ -1,0 +1,41 @@
+.app {
+    margin-left: 0;
+    overflow: auto;
+    padding: 0 ;
+    
+}
+.bg{
+    font-family: cursive;
+    background-color: #f4f2ee;
+}
+@media (min-width: 640px) {
+    .app {
+        margin-left: 16rem;
+        max-width: 640px;
+            
+    }
+}
+@media (min-width: 768px) {
+    .app {
+        max-width: 768px;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .app {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .app {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1536px) {
+    .app {
+        max-width: 1536px;
+    }
+}
+

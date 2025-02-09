@@ -1,0 +1,14 @@
+<app-cetagory-navbar (refresh)="refreshApi($event)" />
+@if (recpies === null) {
+    <div class="text-center h-[50vh] flex justify-center items-center">
+        <div class="space-y-4">
+            
+            <h3 class="text-8xl mb-5">404</h3>
+            <a routerLink="/home" class="bg-orange-500 p-2 rounded mt-2 text-lg font-bold capitalize"> return to home</a>
+        </div>
+    </div>
+
+}
+@else {
+    <app-recipes-cards [recpies]="recpies" [load]="loading" />
+}

@@ -1,0 +1,22 @@
+<nav class="navbar ">
+<button (click)="openNavbar(nav,bg)">
+    <i class="fa-regular fa-bars-staggered"></i>
+</button>
+<button class="fixed top-0 right-0 bg-gray-900 py-2 px-4 text-white rounded-full dark:text-black dark:bg-white z-50" (click)="darck(darkMode())">
+    @if (!darkMode()) {<i class="fa-sharp fa-solid fa-moon"></i>}
+@else {<i class="fa-sharp fa-solid fa-sun"></i>}
+</button>
+    <div class="navContiner dark:!bg-gray-700" #nav>
+        <img src="/image/logo.png" class="image" alt="logo">
+        
+        <ul>
+            <li class="active dark:!bg-green-800 dark:!shadow-lg dark:!shadow-green-600">
+                <a class="link active-link " routerLink="/home"><i
+                        class="fa-solid fa-plate-utensils pr-2"></i>
+                    Meals</a></li>
+            <li class="hover:dark:!shadow-lg hover:dark:!shadow-green-600"><a class="link" routerLink=""><i class="fa-solid fa-plate-utensils pr-2"></i> Ingredients</a></li>
+            <li class="hover:dark:!shadow-lg hover:dark:!shadow-green-600"><a class="link" routerLink=""><i class="fa-solid fa-plate-utensils pr-2"></i> Area</a></li>
+        </ul>
+    </div>
+<div class="background-black" #bg (click)="closeNavbar(nav,bg)"></div>
+</nav>
